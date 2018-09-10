@@ -1,9 +1,8 @@
 package acceptance.steps;
 
 import com.kata.bdd.domain.VTC;
-import com.kata.bdd.domain.repository.VTCRepository;
+import com.kata.bdd.domain.repositories.VTCRepository;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java8.En;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package acceptance.steps;
 
 import com.kata.bdd.domain.Customer;
-import com.kata.bdd.domain.repository.CustomerRepository;
+import com.kata.bdd.domain.repositories.CustomerRepository;
 import cucumber.api.DataTable;
 import cucumber.api.java8.En;
 

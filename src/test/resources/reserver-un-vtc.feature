@@ -5,7 +5,7 @@ Feature: Tout client - Réserver un VTC
   Background:
     Given des clients existent:
       | id  | firstName   | lastName |
-      | abc | Michael     | AZERHAD  |
+      | abc | Christophe  | THEPAUT  |
       | def | Jean-Michel | DUPONT   |
       | ghi | Patrick     | THOMAS   |
     Given des VTC existent:
@@ -23,9 +23,9 @@ Feature: Tout client - Réserver un VTC
       | prénom_client | solde_avant | solde_après | avoir_avant | avoir_après | prénom_vtc | point_départ                                | point_arrivée                               |
       | Jean-Michel   | 35          | 5           | 10          | 10          | Marc       | 43 rue Archereau 75019 Paris                | 2 rue Clisson 75013 Paris                   |
       | Patrick       | 46          | 16          | 10          | 10          | Marc       | 5 rue Clisson 75013 Paris                   | 21 rue Laffitte 75009 Paris                 |
-      | Michael       | 30          | 0           | 10          | 10          | Vincent    | 136 avenue de Flandre 75019 Paris           | 2 Avenue de Flandre 75019 Paris             |
-      | Michael       | 50          | 10          | 10          | 0           | Vincent    | 2 Avenue de Flandre 75019 Paris             | 111 avenue Victor Hugo, 93300 Aubervilliers |
-      | Michael       | 50          | 50          | 10          | 10          | Vincent    | 111 avenue Victor Hugo, 93300 Aubervilliers | 2 Avenue de Flandre 75019 Paris             |
+      | Christophe    | 30          | 0           | 10          | 10          | Vincent    | 136 avenue de Flandre 75019 Paris           | 2 Avenue de Flandre 75019 Paris             |
+      | Christophe    | 50          | 10          | 10          | 0           | Vincent    | 2 Avenue de Flandre 75019 Paris             | 111 avenue Victor Hugo, 93300 Aubervilliers |
+      | Christophe    | 50          | 50          | 10          | 10          | Vincent    | 111 avenue Victor Hugo, 93300 Aubervilliers | 2 Avenue de Flandre 75019 Paris             |
 
   Scenario Outline: solde insuffisant
     Given je suis authentifié en tant que "<prénom_client>"
@@ -38,9 +38,9 @@ Feature: Tout client - Réserver un VTC
       | prénom_client | solde_avant | solde_après | avoir_avant | avoir_après | prénom_vtc | point_départ                      | point_arrivée                               |
       | Jean-Michel   | 0           | 0           | 10          | 10          | Marc       | 43 rue Archereau 75019 Paris      | 2 rue Clisson 75013 Paris                   |
       | Patrick       | 26          | 26          | 10          | 10          | Marc       | 5 rue Clisson 75013 Paris         | 21 rue Laffitte 75009 Paris                 |
-      | Michael       | 29          | 29          | 10          | 10          | Vincent    | 136 avenue de Flandre 75019 Paris | 2 Avenue de Flandre 75019 Paris             |
-      | Michael       | 20          | 20          | 15          | 10          | Vincent    | 136 avenue de Flandre 75019 Paris | 2 Avenue de Flandre 75019 Paris             |
-      | Michael       | 2           | 2           | 10          | 10          | Vincent    | 2 Avenue de Flandre 75019 Paris   | 111 avenue Victor Hugo, 93300 Aubervilliers |
+      | Christophe    | 29          | 29          | 10          | 10          | Vincent    | 136 avenue de Flandre 75019 Paris | 2 Avenue de Flandre 75019 Paris             |
+      | Christophe    | 20          | 20          | 15          | 10          | Vincent    | 136 avenue de Flandre 75019 Paris | 2 Avenue de Flandre 75019 Paris             |
+      | Christophe    | 2           | 2           | 10          | 10          | Vincent    | 2 Avenue de Flandre 75019 Paris   | 111 avenue Victor Hugo, 93300 Aubervilliers |
 
 
   Scenario Outline: Je ne suis pas authentifié

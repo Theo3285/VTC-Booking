@@ -1,4 +1,4 @@
-package com.kata.bdd.domain.repository;
+package com.kata.bdd.domain.repositories;
 
 import com.kata.bdd.domain.VTC;
 

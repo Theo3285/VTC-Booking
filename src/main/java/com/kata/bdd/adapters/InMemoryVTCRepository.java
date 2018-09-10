@@ -1,7 +1,7 @@
 package com.kata.bdd.adapters;
 
 import com.kata.bdd.domain.VTC;
-import com.kata.bdd.domain.repository.VTCRepository;
+import com.kata.bdd.domain.repositories.VTCRepository;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

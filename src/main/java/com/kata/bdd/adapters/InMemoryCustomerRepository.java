@@ -1,7 +1,7 @@
 package com.kata.bdd.adapters;
 
 import com.kata.bdd.domain.Customer;
-import com.kata.bdd.domain.repository.CustomerRepository;
+import com.kata.bdd.domain.repositories.CustomerRepository;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -12,5 +12,10 @@ public class InMemoryCustomerRepository implements CustomerRepository {
 
     public void add(Customer customer) {
         customers.add(customer);
+    }
+
+    @Override
+    public Set<Customer> all() {
+        return customers;
     }
 }
