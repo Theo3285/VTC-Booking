@@ -8,9 +8,8 @@ import java.util.Set;
 
 public class InMemoryCustomerRepository implements CustomerRepository {
 
-    Set<Customer> customers = new LinkedHashSet<>();
+    private Set<Customer> customers = new LinkedHashSet<>();
 
-    @Override
     public void add(Customer customer) {
         customers.add(customer);
     }
