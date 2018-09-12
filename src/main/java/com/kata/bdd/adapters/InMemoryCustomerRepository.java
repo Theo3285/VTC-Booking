@@ -14,7 +14,6 @@ public class InMemoryCustomerRepository implements CustomerRepository {
         customers.add(customer);
     }
 
-    @Override
     public Set<Customer> all() {
         return customers;
     }

@@ -14,4 +14,8 @@ public class Customer {
     public String getFirstName() {
         return firstName;
     }
+
+    public String getId() {
+        return id;
+    }
 }
